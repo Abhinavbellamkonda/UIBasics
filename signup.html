@@ -8,6 +8,57 @@
         }
 
     </script> -->
+    <style>
+        * {box-sizing: border-box}
+  input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+#errors{
+    color: red;
+    background-color: antiquewhite;
+    text-align: left;
+}
+
+#successmessage{
+    color: #04AA6D;
+    background-color: lightcyan;
+    text-align: left;
+}
+
+
+    </style>
 </head>
 
 
@@ -15,24 +66,30 @@
 <body>
     <div id="errors"></div>
     <div id="successmessage"></div>
-  
-    <img src="./oldcar.webp" alt="Beauty is here" width="200"><br>
+    <h1>Sign Up</h1>
+    <p>PLease fill the form to sign up.</p>
+
+    <!-- <img src="./oldcar.webp" alt="Beauty is here" width="200" ><br> -->
+    <p>click Home to navigate to home.</p>
     <a href="./index.html" style="font-size:x-small;color: rgb(3, 131, 243)">Home</a><br>
 
 
+<div class="container">
 
-<form id="singnupform">
-    <label for="fname">first name</label><br>
+<form id="singnupform" style="border:1px solid #ccc">
+    <label for="fname">First name</label><br>
     <input type="text" id="fname" name="fname"><br>
 
-    <label for="lname">last name</label><br>
+    <label for="lname">Last name</label><br>
     <input type="text" id="lname" name="lname"><br>
 
     <label for="email">Email</label><br>
     <input type="email" id="email" name="email"><br>
+    <br>
 
-    <label for="dob">DOB</label><br>
+    <label for="dob">DOB</label>
     <input type="date" id="dob" name="dob"><br>
+    <br>
 
     <label for="phone">phone</label><br>
     <input type="text" id="phone" name="phone">
@@ -73,9 +130,9 @@
     </div><br>
 
     <button type="button" onclick="validateform();">sign up</button>
-    <input type="button" onclick="clearall()" value="clear all feilds">
+    <button type="button" onclick="clearall()" >Clear all</button>
     
 </form>
-
+</div>
 </body>
 </html>

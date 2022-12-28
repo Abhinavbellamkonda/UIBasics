@@ -30,25 +30,32 @@ button:hover {
   opacity: 0.8;
 }
 
+#errors{
+  color: red;
+  background-color: antiquewhite;
+}
     </style>
 <body background="./oldcar.webp">
-    <div id="errors" style="color: aliceblue;"></div>
-    <div id="sucess"></div>
+   
+    <div id="errors" ></div>
+  
+    <div id="successMessage"></div>
 
     <div align="center">
    <img src="./welcome.jpeg"  width="400"> 
    <br>
 
-   <form >
+   <form onsubmit="return validateLoginForm();" method="POST" action="product.html">
     
     <div style="color: aliceblue">
+      
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
         <br>
         <label for="password" >password:</label>
         <input type="password" id="password" name="password"><br>
 
-        <button type="button" onclick="validateLoginForm()">Login</button>
+        <button type="submit">Login</button>
         <input type="button"><br>
         <a href="./index.html" style="font-size:x-small;color: aliceblue">Home</a><br>
     </div>
