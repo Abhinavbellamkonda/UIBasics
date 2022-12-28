@@ -1,0 +1,63 @@
+<html>
+    <title>login page</title>
+    <head>
+        <title>signup</title>
+        <script src="./loginnew.js"></script>
+    </head>
+    <style>
+        input[type=text], input[type=password], input[type=email] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display:grid;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  
+}   
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+    </style>
+<body background="./oldcar.webp">
+    <div id="errors" style="color: aliceblue;"></div>
+    <div id="sucess"></div>
+
+    <div align="center">
+   <img src="./welcome.jpeg"  width="400"> 
+   <br>
+
+   <form >
+    
+    <div style="color: aliceblue">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password" >password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <button type="button" onclick="validateLoginForm()">Login</button>
+        <input type="button"><br>
+        <a href="./index.html" style="font-size:x-small;color: aliceblue">Home</a><br>
+    </div>
+</div>
+
+</form>
+
+
+
+
+</body>
+</html>

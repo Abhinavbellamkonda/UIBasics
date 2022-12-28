@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>signup</title>
+    <script src="./signup.js"></script>
+    <!-- <script type="text/javascript">
+        function add(num1,num2){
+            alert(num1+num2)
+        }
+
+    </script> -->
+</head>
+
+
+
+<body>
+    <div id="errors"></div>
+    <div id="successmessage"></div>
+  
+    <img src="./oldcar.webp" alt="Beauty is here" width="200"><br>
+    <a href="./index.html" style="font-size:x-small;color: rgb(3, 131, 243)">Home</a><br>
+
+
+
+<form id="singnupform">
+    <label for="fname">first name</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label for="lname">last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="dob">DOB</label><br>
+    <input type="date" id="dob" name="dob"><br>
+
+    <label for="phone">phone</label><br>
+    <input type="text" id="phone" name="phone">
+
+    <h5>Choose Gender</h5>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="Gender" value="Male">
+    <label for="male">Male</label>
+    
+
+    <h5>Select model</h5>
+    <input type="checkbox" id="sedan" name="model" value="chrysler">
+    <label for="sedan">sedan</label>
+    <input type="checkbox" id="suv" name="model" value="bmw">
+    <label for="suv">suv</label>
+    <input type="checkbox" id="truck" name="model" value="Truck">
+    <label for="truck">truck</label>
+    <input type="checkbox" id="sports" name="model" value="supra">
+    <label for="sports">sports</label><br>
+    <br>
+
+
+    <label for="cun"><h5>choose a country:</h5> </label>
+    <select name="country" id="cun">
+    <option value="cun">india</option>
+    <option value="cun">japan</option>
+    <option value="cun">Ameriaca</option>
+    <option value="cun">russia</option>
+    </select><br>
+    <br>
+   
+    <div >
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" ><br>
+    <label for="conpassword">Confirm Password:</label><br>
+    <input type="password" id="conpassword" name="password" >
+    </div><br>
+
+    <button type="button" onclick="validateform();">sign up</button>
+    <input type="button" onclick="clearall()" value="clear all feilds">
+    
+</form>
+
+</body>
+</html>
